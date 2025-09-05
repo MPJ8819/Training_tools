@@ -1,15 +1,4 @@
 # Training_tools
-GET https://intervals.icu/api/v1/athlete/1870423/activities
-Authorization: Bearer 5ix163s80ie4yd81hr5w6ew42
-{
-  "zone1": 34200,   // seconds
-  "zone2": 27890,
-  "zone3": 16400,
-  "zone4": 8200,
-  "zone5": 4000,
-  "zone6": 1200,
-  "zone7": 300
-}
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,8 +11,8 @@ Authorization: Bearer 5ix163s80ie4yd81hr5w6ew42
 
   <script>
     async function loadData() {
-      const res = await fetch("https://intervals.icu/api/v1/athlete/YOUR_ID/activities", {
-        headers: { "Authorization": "Bearer YOUR_API_KEY" }
+      const res = await fetch("https://intervals.icu/api/v1/athlete/1870423/activities", {
+        headers: { "Authorization": 5ix163s80ie4yd81hr5w6ew42 }
       });
       const activities = await res.json();
 
